@@ -1,4 +1,5 @@
 Projeto de Testes Automatizados com Cypress para Login e Cadastro
+
 📖 Sobre o Projeto
 Este repositório contém uma suíte de testes automatizados de ponta a ponta (E2E) desenvolvida com Cypress para validar as funcionalidades de Login e Cadastro de uma aplicação web. O objetivo é garantir a qualidade e a robustez dessas funcionalidades críticas, automatizando a verificação de diversos cenários.
 
