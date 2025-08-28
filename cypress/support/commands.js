@@ -18,6 +18,14 @@ Cypress.Commands.add('cadastro', (name, email, password) => {
     cy.get('[data-test="submit-button"]').click();
 })
 
+Cypress.Commands.add('cadastroMassa', (name, email, password) => {
+    cy.get('[data-test="input-name"]').clear().type(name);
+    cy.get('[data-test="input-email"]').clear().type(email);
+    cy.get('[data-test="input-password"]').clear().type(password);
+    cy.get('[data-test="input-confirm-password"]').clear().type(password);
+    cy.get('[data-test="submit-button"]').click();
+})
+
 Cypress.Commands.add('cadastroErro', () => {
     cy.get('[data-test="submit-button"]').click();
     cy.contains('É necessário informar um endereço de email').should('be.visible');
